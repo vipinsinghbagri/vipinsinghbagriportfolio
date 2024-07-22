@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipin Singh Bagri - Portfolio</title>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        main {
+            padding: 6rem 2rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .animated-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section {
+            margin-bottom: 4rem;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid #3498db;
+        }
+
+        .project {
+            background: #ecf0f1;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #3498db;
+            color: #fff;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .social-links {
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: #ecf0f1;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin-bottom: 0.5rem;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="animated-section">
+            <img src="C:\Users\Admin\Downloads\profilelinkedin.jpg" alt="Vipin Singh Bagri" class="profile-image">
+            <h1>Vipin Singh Bagri</h1>
+            <p id="intro-text"></p>
+        </section>
+
+        <section id="about" class="animated-section">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer currently pursuing my BCA in my second year. With a keen interest in building intuitive and dynamic web applications, I constantly strive to enhance my skills and create impactful digital experiences.</p>
+            <br>
+            <h2>Achievments</h2>
+            <p>In 2019, I was honored with the Inspire Award at the district level, which further fueled my passion for innovation and technology. I have succesfully developed more than five gaming applications on the crio plateform, showcasing my problem-solving skills in web development and problem-solving.</p>
+            <br>
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Building logical solutions</li>
+                <li>Playing cricket</li>
+                <li>Traveling</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="animated-section">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Simple Calculator</h3>
+                <p>A user-friendly calculator application showcasing fundamental JavaScript skills.</p>
+            </div>
+            <div class="project">
+                <h3>Animated Landing Page</h3>
+                <p>An engaging landing page featuring smooth animations and responsive design.</p>
+            </div>
+            <div class="project">
+                <h3>Contact Form</h3>
+                <p>A functional and stylish contact form, demonstrating form handling and validation.</p>
+            </div>
+            <div class="project">
+                <h3>Digital Watch</h3>
+                <p>An interactive digital watch display, showcasing real-time data manipulation.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="animated-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vipin-bagri-aa1150277/" target="_blank">Instagram<i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vipin-bagri-aa1150277/" target="_blank">Linkdin<i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/vipin-bagri-aa1150277/" target="_blank">Facebook<i class="fab fa-twitter"></i></a>
+            <a href="https://www.mail.com/in/vipinbagri541@gmail.com" target="_blank">Mail<i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Vipin Singh Bagri. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Form submission handling
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                form.reset();
+            });
+
+            // Animate sections on scroll
+            const animatedSections = document.querySelectorAll('.animated-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            animatedSections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Typing effect for the introduction
+            const introText = "Web Developer | BCA Student";
+            const introElement = document.getElementById('intro-text');
+            let i = 0;
+
+            function typeWriter() {
+                if (i < introText.length) {
+                    introElement.innerHTML += introText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+
+            typeWriter();
+        });
+    </script>
+</body>
+</html>
